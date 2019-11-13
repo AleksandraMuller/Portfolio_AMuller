@@ -6,22 +6,30 @@
 }
 
 body {
-    background: #eee;
+    /* background: #eee; */
     font-size: 16px;
 }
 
 h1 {
     width: 60%;
+    letter-spacing: 0;
+    line-height: 2rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-size: 2.5rem; */
 }
 
 h2 {
+    color: #fff;
+    background: #ff0000;
+    display: table;
+    margin: 0 auto;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: .2rem .5rem;
+    letter-spacing: 0;
+    /* text-align: center; */
 }
 
-h2 span {
-    font-weight: 600;
-}
 /**** MAIN CONTENT ****/
 main {
     margin: 0 auto;
@@ -73,6 +81,8 @@ header {
     top: 10%;
     text-align: right;
     padding: 1rem 0; */
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .icons a {
@@ -84,6 +94,18 @@ header {
     /* padding: .5rem; */
 }
 
+.icons span {
+        width: 45px;
+        height: 45px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+}
+
+span svg path {
+    fill: #fff;
+  }
+
 svg {
     /* border-radius: 50%; */
     
@@ -93,6 +115,9 @@ svg {
     /* stroke-linecap: round; */
     width: 30px;
     height: 30px;
+    display: block;
+  margin: 0 auto;
+  padding-top: 5px;
 
 }
 
@@ -109,6 +134,17 @@ svg {
     font-weight: 600;
 }
 
+.personal_data p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 1.12px;    
+}
+
+.personal_data span {
+    font-weight: 600;
+}
+
 .profile_image {
     border-radius: 50%;
     border: 3px solid #fff;
@@ -117,15 +153,51 @@ svg {
     
     margin-left: auto;
     position: relative;
-    bottom: -2rem;
+    bottom: -1.5rem;
     
 }
 
 /*** ABOUT ME ****/
 
-.about_me {
+.about_me,
+.featured_projects {
+    width: 100%;
+    /* font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400; */
+    background: #f4f4f4;
+    padding: 4rem 0;
+}
+
+.about_me_div,
+.tech_div,
+.featured_projects_div  {
     width: 85%;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #f4f4f4;
+}
+
+.icon_line {
+    width: 20%;
+}
+
+/*** TECH SECTION ***/
+
+.tech {
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.tech_div {
+    background: #fff;
+    text-align: center;
+}
+
+.tech_div p {
+    padding-top: 2rem;
 }
 
 @media (min-width: 550px) {
@@ -135,7 +207,8 @@ svg {
         margin: 0 auto;
     }
 
-    .about_me {
+    .about_me_div,
+    .tech_div {
         width: 63%;
         margin: 0 auto;
     }
@@ -143,8 +216,9 @@ svg {
 
 @media (min-width: 750px) {
 
-    h2 {
-        font-size: 1.1rem;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
     }
     
     .header_container {
@@ -160,16 +234,41 @@ svg {
         font-size: 1.5rem;
     }
 
-    .about_me {
-        width: 56%;
+    .personal_data p {
+        font-size: 1.1rem;
+    }
+
+    .about_me_div,
+    .tech_div,
+    .featured_projects_div  {
+        width: 57%;
         margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .icon_line {
+        width: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .icon_line {
+        width: 10%;
     }
 }
 
 @media (min-width: 1750px) {
-    .about_me {
+    .about_me_div,
+    .tech_div,
+    .featured_projects_div {
         width: 56%;
         margin: 0 auto;
         text-align: center;
+        letter-spacing: 0;
     }
 }
