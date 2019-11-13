@@ -30,6 +30,13 @@ h2 {
     /* text-align: center; */
 }
 
+h4 {
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 41px;
+}
+
 /**** MAIN CONTENT ****/
 main {
     margin: 0 auto;
@@ -166,7 +173,7 @@ svg {
     font-size: 1.7rem;
     font-weight: 400; */
     background: #f4f4f4;
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .about_me_div,
@@ -178,6 +185,7 @@ svg {
     font-size: 1rem;
     font-weight: 400;
     background: #f4f4f4;
+    /* line-height: 40px; */
 }
 
 .icon_line {
@@ -188,7 +196,7 @@ svg {
 
 .tech {
     width: 100%;
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .tech_div {
@@ -199,6 +207,37 @@ svg {
 .tech_div p {
     padding-top: 2rem;
 }
+
+/***FEATURED PROJECTS ***/
+
+.featured_projects_flex {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex_container {
+    width: 100%;
+    margin-bottom: 2rem;
+    /* flex-basis: 50%; */
+}
+
+.flex_container a {
+    color: #ff0000;
+    font-weight: 900;
+}
+
+.flex_container p {
+    font-size: .9rem;
+    line-height: 35px;
+}
+
+.featured_img {
+    width: 100%;
+}
+
+
 
 @media (min-width: 550px) {
     
@@ -249,6 +288,28 @@ svg {
     .icon_line {
         width: 15%;
     }
+
+    
+}
+
+@media (min-width: 950px) {
+    .featured_projects_flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex_container {
+        width: 47%;
+    }
+
+    .flex_container p {
+        font-size: 1rem;
+    }
+    
+
+    /* .featured_img {
+        width: 50%;
+    } */
 }
 
 @media (min-width: 1200px) {
