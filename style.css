@@ -27,14 +27,34 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     padding: .2rem .5rem;
     letter-spacing: 0;
+    /* display: inline; */
     /* text-align: center; */
 }
 
-h4 {
+h2 span {
+    display: none;
+}
+
+h3 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    display: table;
+    letter-spacing: 0;
+    padding-bottom: 2rem;
+}
+
+h3, h4 {
     color: #ff0000;
+    text-transform: uppercase;
+}
+
+h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    font-weight: 700;
     line-height: 41px;
+    display: inline;
 }
 
 /**** MAIN CONTENT ****/
@@ -178,7 +198,8 @@ svg {
 
 .about_me_div,
 .tech_div,
-.featured_projects_div  {
+.featured_projects_div,
+.my_thoughts_div  {
     width: 85%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -194,12 +215,14 @@ svg {
 
 /*** TECH SECTION ***/
 
-.tech {
+.tech,
+.my_thoughts {
     width: 100%;
     padding: 5rem 0;
 }
 
-.tech_div {
+.tech_div,
+.my_thoughts_div {
     background: #fff;
     text-align: center;
 }
@@ -210,9 +233,10 @@ svg {
 
 /***FEATURED PROJECTS ***/
 
-.featured_projects_flex {
+.projects_flex {
     display: flex;
     padding-top: 2rem;
+    padding-bottom: 4rem;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -220,6 +244,7 @@ svg {
 .flex_container {
     width: 100%;
     margin-bottom: 2rem;
+    text-align: left;
     /* flex-basis: 50%; */
 }
 
@@ -229,12 +254,42 @@ svg {
 }
 
 .flex_container p {
-    font-size: .9rem;
+    font-size: 1.1rem;
     line-height: 35px;
+    display: inline;
 }
 
 .featured_img {
     width: 100%;
+}
+
+.other_projects_paragraph {
+    font-size: .8rem;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+}
+
+.other_projects_paragraph span {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: .8rem; */
+    font-weight: 700;
+    color: #ff0000;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.other_projects_paragraph a {
+    text-decoration: underline;
+    color: #ff0000;
+    font-weight: 700;
+}
+
+/*** MY THOUGHTS SECTION ***/
+
+.date,
+.title,
+.text {
+    display: block;
 }
 
 
@@ -247,7 +302,8 @@ svg {
     }
 
     .about_me_div,
-    .tech_div {
+    .tech_div,
+    .my_thoughts_div  {
         width: 63%;
         margin: 0 auto;
     }
@@ -279,7 +335,8 @@ svg {
 
     .about_me_div,
     .tech_div,
-    .featured_projects_div  {
+    .featured_projects_div,
+    .my_thoughts_div   {
         width: 57%;
         margin: 0 auto;
         font-size: 1.5rem;
@@ -289,11 +346,16 @@ svg {
         width: 15%;
     }
 
+    .other_projects_paragraph {
+        font-size: .9rem;
+    }
+
     
 }
 
 @media (min-width: 950px) {
-    .featured_projects_flex {
+
+    .projects_flex {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -306,6 +368,9 @@ svg {
         font-size: 1rem;
     }
     
+    .other_projects_paragraph {
+        font-size: 1rem;
+    }
 
     /* .featured_img {
         width: 50%;
@@ -318,6 +383,10 @@ svg {
         line-height: 4rem;
     }
 
+    h2 span {
+        display: inline;
+    }    
+
     .icon_line {
         width: 10%;
     }
@@ -326,7 +395,8 @@ svg {
 @media (min-width: 1750px) {
     .about_me_div,
     .tech_div,
-    .featured_projects_div {
+    .featured_projects_div,
+    .my_thoughts_div  {
         width: 56%;
         margin: 0 auto;
         text-align: center;
