@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   color: #fff;
-  background: #ff0000;
+  background: #fa382f;
   display: table;
   margin: 0 auto;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ h3 {
 
 h3,
 h4 {
-  color: #ff0000;
+  color: #fa382f;
   text-transform: uppercase;
 }
 
@@ -133,17 +133,20 @@ header {
 }
 
 .links span {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   border: 3px solid #fff;
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.5rem;
 }
 
-span svg path {
+/* span svg path {
   fill: #fff;
 }
+span svg {
+  fill: #fff;
+} */
 
 svg {
   /* border-radius: 50%; */
@@ -157,6 +160,7 @@ svg {
   display: block;
   margin: 0 auto;
   padding-top: 5px;
+  transform: translateY(17%);
 }
 
 .personal_data {
@@ -197,7 +201,9 @@ svg {
 /*** ABOUT ME ****/
 
 .about_me,
-.featured_projects {
+.featured_projects,
+.skills,
+.contact {
   width: 100%;
   /* font-family: 'Montserrat', sans-serif;
     font-size: 1.7rem;
@@ -210,7 +216,9 @@ svg {
 .tech_div,
 .featured_projects_div,
 .my_thoughts_div,
-.skills_div {
+.skills_div,
+.for_more_div,
+.contact_div {
   width: 85%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
@@ -227,14 +235,16 @@ svg {
 /*** TECH SECTION ***/
 
 .tech,
-.my_thoughts {
+.my_thoughts,
+.for_more,
+.contact {
   width: 100%;
   padding: 5rem 0;
 }
 
 .tech_div,
 .my_thoughts_div,
-.skills_div {
+.for_more_div {
   background: #fff;
   text-align: center;
 }
@@ -262,7 +272,7 @@ svg {
 }
 
 .flex_container a {
-  color: #ff0000;
+  color: #fa382f;
   font-weight: 900;
 }
 
@@ -288,14 +298,14 @@ svg {
   font-family: "Roboto", sans-serif;
   /* font-size: .8rem; */
   font-weight: 700;
-  color: #ff0000;
+  color: #fa382f;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 .other_projects_paragraph a {
   text-decoration: underline;
-  color: #ff0000;
+  color: #fa382f;
   font-weight: 700;
 }
 
@@ -311,7 +321,7 @@ svg {
 
 .date {
   font-weight: 300;
-  color: #ff0000;
+  color: #fa382f;
   padding-top: 2rem;
 }
 
@@ -327,6 +337,108 @@ svg {
   font-weight: 800;
 }
 
+/*** SKILLS SECTION ***/
+
+.skills_flex_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 300;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.skills_flex_container p {
+  font-size: 1rem;
+}
+
+.skills_flex_container_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills_flex_container_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fc1 {
+  /* width: 35%; */
+}
+
+.fc3 {
+  margin-bottom: 4rem;
+}
+
+/** FOR ME SECTION **/
+
+.for_me_links {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.for_me_links span {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #fa382f;
+  border-radius: 50%;
+  display: inline-block;
+  /* margin-left: 2rem; */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.for_me_svg {
+  width: 45px;
+  height: 45px;
+  display: block;
+  transform: translateY(17%);
+  /* fill: #FA382F; */
+  /* vertical-align: middle; */
+  /* line-height: 3rem; */
+  /* margin: 0 auto; */
+  /* align-self: center; */
+  /* justify-content: center; */
+}
+
+/* .for_me span svg {
+  fill: #FA382F;
+} */
+
+/*** CONTACTS ***/
+
+.contact {
+  background: #072bce;
+  color: #fff;
+}
+
+.contact h3 {
+  color: #fff;
+}
+
+.contact_div {
+  background: #072bce;
+}
+
+.contacts {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.contacts p:first-child {
+  font-weight: 700;
+}
+
+/*** MEDIA QUERIES***/
+
 @media (min-width: 550px) {
   .header_container {
     width: 70%;
@@ -336,7 +448,10 @@ svg {
   .about_me_div,
   .tech_div,
   .my_thoughts_div,
-  .skills_div {
+  .featured_projects_div,
+  .skills_div,
+  .for_more_div,
+  .contact_div {
     width: 63%;
     margin: 0 auto;
   }
@@ -375,7 +490,9 @@ svg {
   .tech_div,
   .featured_projects_div,
   .my_thoughts_div,
-  .skills_div {
+  .skills_div,
+  .for_more_div,
+  .contact_div {
     width: 57%;
     margin: 0 auto;
     font-size: 1.5rem;
@@ -422,6 +539,19 @@ svg {
     bottom: -3rem;
   }
 
+  .skills_flex_container_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills_flex_container {
+    /* flex-direction: row; */
+  }
+
+  .fc {
+    /* width: 30%; */
+  }
   /* .featured_img {
         width: 50%;
     } */
@@ -452,7 +582,9 @@ svg {
   .tech_div,
   .featured_projects_div,
   .my_thoughts_div,
-  .skills_div {
+  .skills_div,
+  .for_more_div,
+  .contact_div {
     width: 56%;
     margin: 0 auto;
     text-align: center;
