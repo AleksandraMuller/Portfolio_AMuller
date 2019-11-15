@@ -476,3 +476,17 @@ svg {
     bottom: -6rem;
   }
 }
+
+/** AND MEDIA QUERIES ADDING HEIGHT **/
+
+@media (orientation: landscape) {
+  .profile_image {
+    bottom: 5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 550px) {
+  .profile_image {
+    bottom: -3.3rem;
+  }
+}
