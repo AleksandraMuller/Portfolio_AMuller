@@ -6,7 +6,6 @@
 }
 
 body {
-  /* background: #eee; */
   font-size: 16px;
 }
 
@@ -14,7 +13,6 @@ h1 {
   width: 60%;
   letter-spacing: 2px;
   line-height: 2.5rem;
-  /* font-family: 'Montserrat', sans-serif; */
   font-size: 2.5rem;
 }
 
@@ -27,8 +25,6 @@ h2 {
   font-family: "Montserrat", sans-serif;
   padding: 0.2rem 0.5rem;
   letter-spacing: 0;
-  /* display: inline; */
-  /* text-align: center; */
 }
 
 h2 span {
@@ -66,31 +62,19 @@ main {
 /**** HEADER ***/
 
 header {
-  /* background-image: linear-gradient(rgba(199, 24, 24, 0.5), rgba(172, 33, 33, 0.5)), url(./img/sign.jpg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./img/letter.jpg);
   background-size: cover;
   background-position: center;
-
   height: 60vh;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 0 2rem 0 2rem;
-
-  /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-  /* align-content: center; */
-  /* align-content: flex-end; */
-  /* display: grid;
-    grid-template-columns: minmax(2rem, 1fr) repeat(2, 1fr) minmax(6rem, 1fr) minmax(2rem, 1fr);
-    grid-template-rows: repeat(4, 1fr); */
 }
 
 .header_container {
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -102,72 +86,6 @@ header {
   justify-content: space-between;
   margin-top: 2rem;
   flex-wrap: wrap;
-}
-
-.personal_data_info {
-  /* flex-basis: 70%; */
-  /* align-self: center; */
-}
-
-.links {
-  /* width: 50%; */
-  display: flex;
-  justify-content: flex-end;
-  /* margin-left: auto; */
-  margin-top: 3rem;
-  /* position: relative;
-    top: 10%;
-    text-align: right;
-    padding: 1rem 0; */
-  /* display: flex;
-    justify-content: space-between; */
-}
-
-.links a {
-  /* padding-left: .1rem; */
-  /* border: 3px solid #fff;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%; */
-  /* padding: .5rem; */
-}
-
-.links span {
-  width: 55px;
-  height: 55px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-/* span svg path {
-  fill: #fff;
-}
-span svg {
-  fill: #fff;
-} */
-
-svg {
-  /* border-radius: 50%; */
-
-  /* height: 50%; */
-
-  /* filter: drop-shadow(1px 1px 0px #111) drop-shadow(-1px 1px 0px #111) drop-shadow(1px -1px 0px #111) drop-shadow(-1px -1px 0px #111); */
-  /* stroke-linecap: round; */
-  width: 30px;
-  height: 30px;
-  display: block;
-  margin: 0 auto;
-  padding-top: 5px;
-  transform: translateY(17%);
-}
-
-.personal_data {
-  /* margin-right: auto;
-    position: relative;
-    width: 80%;
-    top: 15%; */
   font-family: "Montserrat", sans-serif;
   align-self: center;
 }
@@ -187,12 +105,34 @@ svg {
   font-weight: 600;
 }
 
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.links span {
+  width: 55px;
+  height: 55px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 5px;
+  transform: translateY(17%);
+}
+
 .profile_image {
   border-radius: 50%;
   border: 3px solid #fff;
-  /* margin-top: 3rem; */
   width: 150px;
-
   margin-left: auto;
   position: relative;
   bottom: -1.8rem;
@@ -205,9 +145,6 @@ svg {
 .skills,
 .contact {
   width: 100%;
-  /* font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 400; */
   background: #f4f4f4;
   padding: 5rem 0;
 }
@@ -225,7 +162,6 @@ svg {
   font-size: 1rem;
   font-weight: 400;
   background: #f4f4f4;
-  /* line-height: 40px; */
 }
 
 .icon_line {
@@ -268,7 +204,6 @@ svg {
   margin-bottom: 2rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
-  /* flex-basis: 50%; */
 }
 
 .flex_container a {
@@ -296,7 +231,6 @@ svg {
 
 .other_projects_paragraph span {
   font-family: "Roboto", sans-serif;
-  /* font-size: .8rem; */
   font-weight: 700;
   color: #fa382f;
   text-transform: uppercase;
@@ -348,7 +282,6 @@ svg {
   line-height: 2rem;
   font-weight: 300;
   width: 100%;
-  /* flex-wrap: wrap; */
 }
 
 .skills_flex_container p {
@@ -367,11 +300,7 @@ svg {
   justify-content: space-between;
 }
 
-.fc1 {
-  /* width: 35%; */
-}
-
-.fc3 {
+.skills_third_column {
   margin-bottom: 4rem;
 }
 
@@ -390,7 +319,6 @@ svg {
   border: 2px solid #fa382f;
   border-radius: 50%;
   display: inline-block;
-  /* margin-left: 2rem; */
   text-align: center;
   vertical-align: middle;
 }
@@ -400,17 +328,7 @@ svg {
   height: 45px;
   display: block;
   transform: translateY(17%);
-  /* fill: #FA382F; */
-  /* vertical-align: middle; */
-  /* line-height: 3rem; */
-  /* margin: 0 auto; */
-  /* align-self: center; */
-  /* justify-content: center; */
 }
-
-/* .for_me span svg {
-  fill: #FA382F;
-} */
 
 /*** CONTACTS ***/
 
@@ -475,11 +393,6 @@ svg {
 
   .personal_data {
     font-size: 1.5rem;
-    /* flex-wrap: nowrap; */
-  }
-
-  .personal_data_info {
-    /* flex-basis: 100%; */
   }
 
   .personal_data p {
@@ -530,10 +443,6 @@ svg {
     flex-wrap: nowrap;
   }
 
-  .personal_data_info {
-    /* flex-basis: 100%; */
-  }
-
   .profile_image {
     width: 200px;
     bottom: -3rem;
@@ -544,17 +453,6 @@ svg {
     flex-direction: row;
     justify-content: space-around;
   }
-
-  .skills_flex_container {
-    /* flex-direction: row; */
-  }
-
-  .fc {
-    /* width: 30%; */
-  }
-  /* .featured_img {
-        width: 50%;
-    } */
 }
 
 @media (min-width: 1200px) {
@@ -569,11 +467,6 @@ svg {
 
   .icon_line {
     width: 10%;
-  }
-
-  .profile_image {
-    /* width: 200px; */
-    /* bottom: -4rem; */
   }
 }
 
@@ -593,7 +486,6 @@ svg {
 
   .profile_image {
     width: 300px;
-    /* bottom: -6rem; */
   }
 }
 
