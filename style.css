@@ -349,6 +349,7 @@ svg {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  text-decoration: none;
 }
 
 .contacts p:first-child {
