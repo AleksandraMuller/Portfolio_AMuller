@@ -1,5 +1,6 @@
 /****GENERAL SETTINGS ****/
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -62,6 +63,14 @@ main {
 /**** HEADER ***/
 
 header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    url(./img/letter.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./img/letter.jpg);
   background-size: cover;
@@ -75,18 +84,33 @@ header {
 .header_container {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .personal_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 2rem;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -106,7 +130,11 @@ header {
 }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-top: 3rem;
 }
@@ -126,6 +154,7 @@ svg {
   display: block;
   margin: 0 auto;
   padding-top: 5px;
+  -webkit-transform: translateY(17%);
   transform: translateY(17%);
 }
 
@@ -192,10 +221,16 @@ svg {
 /***FEATURED PROJECTS ***/
 
 .projects_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
   padding-bottom: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -274,7 +309,10 @@ svg {
 /*** SKILLS SECTION ***/
 
 .skills_flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
@@ -289,14 +327,26 @@ svg {
 }
 
 .skills_flex_container_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .skills_flex_container_right {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -307,8 +357,12 @@ svg {
 /** FOR ME SECTION **/
 
 .for_me_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-line-pack: center;
   align-content: center;
   margin-top: 2rem;
 }
@@ -327,6 +381,7 @@ svg {
   width: 45px;
   height: 45px;
   display: block;
+  -webkit-transform: translateY(17%);
   transform: translateY(17%);
 }
 
@@ -423,7 +478,12 @@ svg {
 
 @media (min-width: 950px) {
   .projects_flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -441,6 +501,7 @@ svg {
 
   .personal_data {
     font-size: 1.5rem;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
 
@@ -450,8 +511,14 @@ svg {
   }
 
   .skills_flex_container_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 }
@@ -507,6 +574,16 @@ svg {
 @media (orientation: landscape) {
   .profile_image {
     bottom: 5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 549px) {
+  .links {
+    visibility: hidden;
+  }
+
+  .profile_image {
+    width: 100px;
   }
 }
 
