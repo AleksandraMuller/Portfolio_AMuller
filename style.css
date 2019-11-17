@@ -55,10 +55,25 @@ h4 {
   display: inline;
 }
 
+a:focus {
+  /* outline-color: invert; */
+  /* box-shadow: 0 0 5px 5px #ff0000; */
+  border: solid 3px #fa382f;
+  outline: solid 3px #fa382f;
+}
+
 /**** MAIN CONTENT ****/
 main {
   margin: 0 auto;
 }
+
+.aria {
+  display: none;
+}
+
+/* #linkedin {
+  display: none;
+} */
 
 /**** HEADER ***/
 
@@ -139,13 +154,14 @@ header {
   margin-top: 3rem;
 }
 
-.links span {
+.links a {
   width: 55px;
   height: 55px;
   border: 3px solid #fff;
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.5rem;
+  background: transparent;
 }
 
 svg {
@@ -154,6 +170,7 @@ svg {
   display: block;
   margin: 0 auto;
   padding-top: 5px;
+  background: transparent;
   -webkit-transform: translateY(17%);
   transform: translateY(17%);
 }
@@ -365,22 +382,24 @@ svg {
   -ms-flex-line-pack: center;
   align-content: center;
   margin-top: 2rem;
+  /* background: transparent; */
 }
 
-.for_me_links span {
+.for_me_links a {
   width: 75px;
   height: 75px;
   border: 2px solid #fa382f;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+  background: transparent;
 }
 
 .for_me_svg {
   width: 45px;
   height: 45px;
-  display: block;
+  /* display: block; */
   -webkit-transform: translateY(17%);
   transform: translateY(17%);
 }
@@ -407,8 +426,14 @@ svg {
   text-decoration: none;
 }
 
-.contacts p:first-child {
+.contacts p {
   font-weight: 700;
+}
+
+.contacts a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
 }
 
 /*** MEDIA QUERIES***/
@@ -582,9 +607,9 @@ svg {
     visibility: hidden;
   }
 
-  .profile_image {
+  /* .profile_image {
     width: 100px;
-  }
+  } */
 }
 
 @media (orientation: landscape) and (min-height: 550px) {
