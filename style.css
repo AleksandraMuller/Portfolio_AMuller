@@ -440,7 +440,7 @@ svg {
 
 @media (max-width: 400px) {
   .profile_image {
-    height: 125px;
+    height: 150px;
   }
 }
 
@@ -602,11 +602,11 @@ svg {
 
 /** AND MEDIA QUERIES ADDING HEIGHT **/
 
-/* @media (orientation: landscape) {
+@media (orientation: landscape) {
   .profile_image {
     bottom: 5rem;
   }
-} */
+}
 
 @media (orientation: landscape) and (max-height: 549px) {
   .links {
@@ -614,8 +614,8 @@ svg {
   }
 }
 
-/* @media (orientation: landscape) and (min-height: 550px) {
+@media (orientation: landscape) and (min-height: 550px) {
   .profile_image {
     bottom: -3.3rem;
   }
-} */
+}
