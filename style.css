@@ -237,6 +237,10 @@ svg {
   padding-top: 4rem;
 }
 
+.tech_div p span {
+  color: #db1006;
+}
+
 /***FEATURED PROJECTS ***/
 
 .projects_flex {
@@ -275,14 +279,23 @@ svg {
   width: 100%;
   height: 30vh;
   margin-bottom: 1rem;
-  /* border: 1px #000 solid; */
   object-fit: cover;
-  /* object-fit: cover; */
+}
+
+.featured_projects_tags {
+  margin-top: 1rem;
+}
+
+.featured_projects_tags p {
+  background: #fddfe7;
+  border: 1px solid #fddfe7;
+  font-size: 0.5rem;
+  font-weight: 300;
+  padding: 0.2rem 0.8rem;
 }
 
 .other_projects_paragraph {
   font-size: 0.8rem;
-  /* text-decoration: underline; */
   padding-bottom: 2rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -293,7 +306,6 @@ svg {
   font-weight: 700;
   color: #fa382f;
   text-transform: uppercase;
-  /* text-decoration: underline; */
 }
 
 .other_projects_paragraph a {
@@ -333,9 +345,7 @@ svg {
 .thoughts_img {
   width: 100%;
   height: 30vh;
-  /* height: 65%; */
   object-fit: cover;
-  /* background-position: center; */
 }
 
 /*** SKILLS SECTION ***/
@@ -517,6 +527,11 @@ svg {
     font-size: 1.5rem;
   }
 
+  .featured_projects_tags p {
+    padding: 0.3rem 1rem;
+    /* font-size: 0.5rem; */
+  }
+
   .icon_line {
     width: 15%;
   }
@@ -547,6 +562,11 @@ svg {
 
   .other_projects_paragraph {
     font-size: 1rem;
+  }
+
+  .featured_projects_tags p {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
   }
 
   .personal_data {
