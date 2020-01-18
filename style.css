@@ -58,8 +58,8 @@ h4 {
 }
 
 a:focus {
-  border: solid 3px #db1006;
-  outline: solid 3px #db1006;
+  border: solid 1px #db1006;
+  outline: solid 1px #db1006;
 }
 
 /**** MAIN CONTENT ****/
@@ -265,14 +265,36 @@ svg {
 }
 
 .flex_container a {
-  color: #fa382f;
+  color: black;
   font-weight: 900;
+  text-decoration: none;
 }
 
 .flex_container p {
   font-size: 1.1rem;
   line-height: 35px;
   display: inline;
+}
+
+.flex_container a:link,
+a:visited {
+  color: black;
+  font-weight: 400;
+}
+
+.flex_container a span {
+  color: red;
+  font-weight: 400;
+}
+
+.flex_container h4:hover,
+.featured_paragraph:hover,
+.flex_container span:hover {
+  border-bottom: 2px #fa382f solid;
+}
+
+.flex_container img:hover {
+  border: 2px #fa382f solid;
 }
 
 .featured_img {
@@ -309,9 +331,14 @@ svg {
 }
 
 .other_projects_paragraph a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.other_projects_paragraph a:hover {
   text-decoration: underline;
-  color: #fa382f;
-  font-weight: 700;
+  text-decoration-color: #fa382f;
 }
 
 /*** MY THOUGHTS SECTION ***/
@@ -332,6 +359,11 @@ svg {
 
 .title {
   font-weight: 800;
+}
+
+.title:hover {
+  text-decoration: underline;
+  text-decoration-color: #fa382f;
 }
 
 .text {
@@ -524,7 +556,7 @@ svg {
   .contact_div {
     width: 57%;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .featured_projects_tags p {
