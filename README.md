@@ -11,4 +11,4 @@ In this project, I focused on accessibility and usability of the website
 
 ## Deployed version 🚀
 
-https://aleksandramuller.netlify.com/
+https://aleksandramuller.netlify.app/
